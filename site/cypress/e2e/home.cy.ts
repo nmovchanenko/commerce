@@ -4,8 +4,8 @@ describe("home page", () => {
     cy.$("product-tag")
       .eq(0)
       .within(() => {
-        cy.$("product-name").should("contain", "Star Wars")
-        cy.$("product-price").should("contain", "$25.00 USD")
+        cy.$("product-name").should("contain", "T-shirt")
+        cy.$("product-price").should("contain", "$25.00 EUR")
       })
   })
 })
